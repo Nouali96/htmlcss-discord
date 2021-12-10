@@ -1,19 +1,38 @@
+/*  \/\/\/\/\/\/\/\/\/\/\/\/\/\Regole generali/\/\/\/\/\/\/\/\/\/\/\/\/\/  */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
+.background-nav{
     background-image: url('../img/jumbo.png');
     height: 700px;
     background-size: cover;
 }
 
-#header{
+.marginlr-15{
     margin-left: 15%; 
     margin-right: 15%;
 }
+
+ul{
+    list-style: none;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.svg-white{
+    filter: invert();
+}
+
+/*  /\/\/\/\/\/\/\/\/\/\/\/\/\/\Regole generali/\/\/\/\/\/\/\/\/\/\/\/\/\/\  */
+
 
 /* Inizio Sezione menu */
 
@@ -40,12 +59,11 @@ ul{
     margin-right: 30px;
 }
 
-nav ul{
+.menu ul{
     padding: 0;
 }
 
-nav ul li a{
-    font-family: Arial, Helvetica, sans-serif;
+.menu ul li a{
     color: white;
     text-decoration: none;
 }
@@ -65,49 +83,252 @@ nav ul li a{
     text-align: center;
     margin-left: 15%;
     margin-right: 15%;
-    margin-top: 15%;
+    margin-top: 10%;
     color: white;
 }
 
-.box-1 a button{
+.box-1 button{
     padding: 15px;
     border-radius: 30px;
     border: none;
 }
 
 .box-1>h1{
-
    font-size: 400%; 
 }
 
 .box-1>p{
     margin-top: 50px;
     font-size: 150%; 
- }
+}
 
- .box-1>a>button{
+.box-1>button{
     margin-top: 15px;
     margin-left: 10%;
     font-size: 125%; 
     padding-left: 30px;
     padding-right: 30px;
- }
+}
 
- .btn-black {
+.box-1>button>a{
+    text-decoration: none;
+}
+
+.btn-black{
     background-color: #23272A;
+}
+
+.btn-black>a{
     color: white;
- }
+}
 
- .btn-white {
+.btn-white{
     background-color: white;
- }
+}
 
- .btn-black:hover {
+.btn-white>a{
     color: black;
- }
+}
 
- .btn-white:hover {
+.btn-black:hover {
+    color: black;
+}
+
+.btn-white:hover {
     color: grey;
- }
+}
 
 /* Fine Sezione menu */
+
+/* Inizio corpo */
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.box-img{
+    width: 60%;
+    display: inline-block;
+    height: 100%;
+}
+
+.box-img>img{
+    width: 100%;
+    height: 100%;
+}
+
+.box-text>h1{
+    font-size: 200%;
+}
+
+.box{
+    height: 700px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: block;
+}
+
+.box-2 .box-text{
+    padding-top: 40px;
+    padding-left: 10%;
+    width: 40%;
+    display: inline-block;   
+}
+
+.box-3 .box-text{
+    padding-top: 40px;
+    padding-right: 10%;
+    width: 40%;
+    display: inline-block;   
+}
+
+.box-4 .box-text{
+    padding-top: 40px;
+    padding-left: 10%;
+    width: 40%;
+    display: inline-block;   
+}
+
+.box-text-big{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.box-text-big>h1{
+    font-size: 200%;
+}
+
+.box-img-big{
+    width: 100%;
+}
+
+.box-img-big>img{
+    width: 100%;
+}
+
+.container-download{
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+}
+
+.box-stars{
+    background-image: url(../img/stars.svg);
+    height: 50px;
+}
+
+.container-download>button{
+    font-size: 125%; 
+    padding-left: 30px;
+    padding-right: 30px;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+}
+
+.container-download>button>a{
+    text-decoration: none;
+}
+
+.btn-violet{
+    background-color: #8EA1E1;
+}
+
+.btn-violet>a{
+    color: white;
+}
+
+.btn-violet:hover {
+    color: black;
+}
+/* Fine corpo */
+
+/* Inizio sezione footer */
+footer{
+    margin-top: 150px;
+    background-color: #23272A;
+    padding-top: 5%;
+    padding-bottom: 4%;
+}
+
+.container-footer li{
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.container-footer li h3{
+    color: #7890E6;
+}
+
+.container-footer li a{
+    color: white;
+}
+
+.box-footer-left{
+    display: inline-block;
+    width: 25%;
+    margin-right: 3%;
+}
+
+.box-footer-left h1{
+    color: #7890E6;
+}
+
+#language{
+    border: none;
+    background-color: #23272A;
+    color: white;
+    font-size: 0.8em;
+}
+.box-footer{
+    display: inline-block;
+    width: 10%;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.box-footer h3{
+    margin-bottom: 2%;
+}
+
+.box-footer-language{
+    padding-top: 2%;
+    padding-bottom: 3%;
+    border-top: 2px white;
+}
+
+hr{
+    margin-bottom: 20px;
+    margin-top: 30px;
+    width: 100%;
+    height: 2px;
+    background-color: #39435D;
+}
+
+.container-footer li>a:hover{
+    text-decoration: underline;
+}
+
+.icone a{
+    margin-right: 10px;
+}
+
+.bottom-footer>button{
+    font-size: 70%; 
+    padding-left: 30px;
+    padding-right: 30px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+}
+
+.bottom-footer>button>a{
+    text-decoration: none;
+}
+
+/* Fine sezione footer */
